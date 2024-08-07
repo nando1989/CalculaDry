@@ -1,0 +1,453 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+#index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/05/Mathematics-equations.jpg");
+
+}
+
+.calculator {
+    font-family: Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 490px;
+    height: 800px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    color:#ffff;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 31);
+   
+}
+
+.calculator p {
+    color: #2bb44d;
+    font-size: 20px;
+}
+
+.display {
+    width: 90%;
+    height: 80px;
+    margin-bottom: 10px;
+    background-color: rgb(30, 30, 31);
+    color:azure;
+    font-size: 55px;border: none;
+    border-radius: 10px;
+    border: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+}
+.result {
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: rgb(30, 30, 31);
+    color:azure;
+    font-size: 55px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.buttonNumber {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: calc(100% - 15px);
+    gap: 5px;
+    border-radius: 15px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.buttonItens{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: calc(100% - 15px);
+    gap: 5px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+
+button{
+    font-size: 20px;
+    background-color: rgb(23, 23, 24);
+    color: #ccc;
+    border-radius: 20px;
+    border: none;
+}
+
+.buttonC {
+    background-color: rgb(145, 5, 5);
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.buttonC:hover {
+    background-color: #490101;
+    color: rgb(255, 255, 255);
+}
+
+.ButtonOrcTeto{
+    font-size: 20px;
+    background-color: #4f2f2f;
+    color: #ffffff;
+
+}
+
+
+.ButtonOrcParede{
+    font-size: 20px;
+    background-color: #4f2f2f;
+    color: #ffffff;
+    
+}
+
+
+
+button:hover {
+    background-color: #505050;
+    color: black;
+}
+
+#Budget{
+    width: 490px;
+    height: 800px;
+    background-color: rgb(241, 243, 150);
+    position:absolute;
+    display:none;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: solid 5px rgb(119, 6, 6);
+}
+
+.contact{
+    width: 50px;
+    height: 50px;
+}
+
+.imgContact{
+    width: 50px;
+    height: 50px;
+
+}
+
+.x{
+    width: 40px;
+    height: 40px;
+    background-color: brown;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+.buttonClose{
+    font-size: 15px;
+    background-color: #800404;
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.buttonClose:hover{
+    background-color: #490505;
+    color: #ffffff;
+
+
+}
+
+.titleList {
+    color: #000000;
+    width: 100%;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+}
+
+.itensList{
+    color: #000000;
+    width: 100%;
+    height: 705px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.list{
+    width: 100%;    
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.buttonD{
+  
+    background-color: rgb(23, 23, 24);
+  border-radius: 10px;
+  font-size: 35px;
+  color: #2F4F4F;
+}
+
+.buttonD:hover {
+    background-color: #75880a;
+    color: rgb(255, 255, 255);
+}
+
+.buttonM{
+    
+    background-color: rgb(23, 23, 24);
+    border-radius: 10px;
+    font-size: 35px;
+    color: #2F4F4F;;
+}
+
+.buttonM:hover {
+    background-color: #75880a;
+    color: rgb(255, 255, 255);
+}
+.buttonS{
+    
+    background-color: rgb(23, 23, 24);
+    border-radius: 10px;
+    font-size: 35px;
+    color: #2F4F4F;;
+}
+
+.buttonS:hover {
+    background-color: #75880a;
+    color: rgb(255, 255, 255);
+}
+
+.buttonA{
+    
+    background-color: rgb(23, 23, 24);
+    border-radius: 10px;
+    font-size: 35px;
+    color: #2F4F4F;;
+}
+
+.buttonA:hover {
+    background-color: #75880a;
+    color: rgb(255, 255, 255);
+}
+
+.inputPlaca{
+    width: 70%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    font-size: 5px;
+    margin: 5px;
+    align-items: center;
+    justify-content:flex-end;
+}
+.inputPlaca h2{
+    font-size: 20px;
+
+}
+.displayPlaca{
+    width: 60px;
+    height: 60px;
+    background-color: 	#010316;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.imgInput{
+    width: 60px;
+    height: 60px;
+}
+
+.imgEInput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgContact{
+    width: 95px;
+    height: 95px;
+
+}
+
+.imgSeta{
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+}
+
+.contact{
+    width: 60%;
+    height: 95px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+@media (max-width: 768px) {
+    #index {
+        display: flex;
+        width: 100%;
+        height: 100dvh;
+        background-color: black;
+        background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/05/Mathematics-equations.jpg");
+        border: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calculator {
+        font-family:'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 90dvh;
+        color:#ffff;
+        background-color: rgb(30, 30, 31);
+        border: none;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }   
+
+    #Budget{
+        width: 95%;
+        height: 95dvh;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        display:none;
+        justify-content: center;
+        border-radius: 10px;
+        border: solid 4px rgb(119, 6, 6);
+    }
+
+    .contact{
+        width: 60%;
+        height: 65px;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .imgContact{
+        width: 95px;
+        height: 95px;
+    
+    }
+
+    .imgSeta{
+        width: 45px;
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .titleList {
+        color: #000000;
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .titleList h1{
+        color: #000000;
+       font-size: 25px;
+    }
+
+    .buttonNumber {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: calc(100% - 15px);
+        gap: 5px;
+        border-radius: 15px;
+        font-size: 15px;
+       
+    }
+
+    .buttonItens{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: calc(100% - 15px);
+        gap: 5px;
+        border-radius: 15px;
+        font-size: 10px;
+    }
+
+    .inputPlaca{
+        width: 70%;
+        height: 55px;
+        display: flex;
+        flex-direction: row;
+        font-size: 5px;
+        margin: 5px;
+        align-items: center;
+        justify-content:space-between;
+    }
+    
+    .buttonItens{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: calc(100% - 15px);
+        gap: 5px;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+
+    .itensList{
+        color: #000000;
+        width: 100%;
+        height: 635px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .list{
+       
+        height: 680px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imgEInput{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .buttonClose:hover{
+        background-color: #490505;
+        color: #ffffff;
+    
+    
+    }
+    
+}
