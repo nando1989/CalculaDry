@@ -101,15 +101,15 @@ button{
 }
 
 .ButtonOrcTeto{
-    font-size: 20px;
+    font-size: 15px;
     background-color: #4f2f2f;
     color: #ffffff;
-
+    
 }
 
 
 .ButtonOrcParede{
-    font-size: 20px;
+    font-size: 15px;
     background-color: #aaa7a7;
     color: #ffffff;
     
@@ -122,7 +122,7 @@ button:hover {
     color: black;
 }
 
-#Budget{
+#BudgetTeto{
     width: 490px;
     height: 800px;
     background-color: rgb(241, 243, 150);
@@ -135,14 +135,25 @@ button:hover {
     border: solid 5px rgb(119, 6, 6);
 }
 
-.contact{
-    width: 50px;
-    height: 50px;
+#BudgetParede{
+    width: 490px;
+    height: 800px;
+    background-color: rgb(241, 243, 150);
+    position:absolute;
+    display:none;
+    justify-content: center;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    border: solid 5px rgb(119, 6, 6);
 }
 
-.imgContact{
-    width: 50px;
-    height: 50px;
+a{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -160,6 +171,7 @@ button:hover {
     height: 30px;
     width: 30px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .buttonClose:hover{
@@ -280,11 +292,15 @@ button:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .imgContact{
-    width: 95px;
-    height: 95px;
+    width: 43%;
+    height: 75px;
+    margin-left: 20px;
+    cursor: pointer;
+
 
 }
 
@@ -294,14 +310,15 @@ button:hover {
     margin-top: 5px;
 }
 
-.contact{
-    width: 60%;
+#contact{
+    width: 100%;
     height: 95px;
     margin-top: 18px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+   
     
 }
 
@@ -331,7 +348,7 @@ button:hover {
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     }   
 
-    #Budget{
+    #BudgetTeto{
         width: 95%;
         height: 95dvh;
         background-color: rgb(255, 255, 255);
@@ -342,7 +359,18 @@ button:hover {
         border: solid 4px rgb(119, 6, 6);
     }
 
-    .contact{
+    #BudgetParede{
+        width: 95%;
+        height: 95dvh;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        display:none;
+        justify-content: center;
+        border-radius: 10px;
+        border: solid 4px rgb(119, 6, 6);
+    }
+
+    #contact{
         width: 60%;
         height: 55px;
         display: flex;
@@ -350,11 +378,13 @@ button:hover {
         align-items: center;
         justify-content: center;
         
+        
     }
 
     .imgContact{
         width: 85px;
         height: 85px;
+        cursor: pointer;
     
     }
 
@@ -388,7 +418,7 @@ button:hover {
        
     }
 
-    .buttonItens{
+    .buttonItensTeto{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         height: calc(100% - 15px);
@@ -397,13 +427,22 @@ button:hover {
         font-size: 10px;
     }
 
+    .buttonItensParede{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: calc(100% - 15px);
+        gap: 5px;
+        border-radius: 5px;
+        font-size: 10px;
+
+    }
+
     .inputPlaca{
         width: 70%;
         height: 55px;
         display: flex;
         flex-direction: row;
         font-size: 5px;
-        margin: 5px;
         align-items: center;
         justify-content:space-between;
     }
@@ -420,12 +459,12 @@ button:hover {
     .itensList{
         color: #000000;
         width: 100%;
-        height: 535px;
+        height: 95dvh;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 10px;
+        
     }
     .list{
        
@@ -449,4 +488,23 @@ button:hover {
     
     }
     
+    .close{
+        position: fixed;
+    }
+
+    a{
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .imgContact{
+        width: 98%;
+        height: 75px;
+        margin-left: 20px;
+    
+    }
 }

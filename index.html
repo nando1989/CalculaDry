@@ -37,6 +37,7 @@
 
             </div>
 
+
             <div class="buttonItens">
                 <button class="buttonC" onclick="clearDisplay()">C</button>
                 <button onclick="placaStP()">Placa 1,80</button>
@@ -48,18 +49,132 @@
                 <button onclick="parafusoGn25()">Parafuso GN25</button>
                 <button onclick="ParafusoChap()">Parafuso metal</button>
                 <button onclick="regulador()">Regula </button>
-                <button class="ButtonOrcTeto" onclick="showList()">Orçamento Teto </button>
-                <button class="ButtonOrcParede" onclick="showList()" disabled >parede Desativado</button>
+                <button class="ButtonOrcTeto" onclick="showListTeto()">Orçamento Teto </button>
+                <button class="ButtonOrcParede" onclick="showListParede()">parede Desativado</button>
             </div>
+
 
 
 
         </div>
 
-        <div id="Budget">
+        <div id="BudgetTeto">
             <div class="list">
                 <div class="close">
-                    <button class="buttonClose" onclick="closeList()">X</button>
+                    <button class="buttonClose" onclick="closeListTeto()">X</button>
+                </div>
+
+                <div class="itensList">
+                    <div class="inputPlaca">
+                        <h2>Placa 1200 x 1800:</h2>
+
+                        <div class="imgEInput">
+                            <img class="imgInput" src="https://www.bevilacqua.com.br/img/gco-images/522-pt-br.jpg" />
+                            <input type="text" class="displayPlaca" id="displayPlaca" disabled>
+                        </div>
+
+
+                    </div>
+
+                    <div class="inputPlaca">
+                        <h2>Cantoneira 25x30:</h2>
+
+                        <div class="imgEInput">
+                            <img class="imgInput"
+                                src="https://cdn.leroymerlin.com.br/products/perfil_cantoneira_para_forro_3m_x_25x30mm_92197133_5fa6_600x600.jpg" />
+                            <input type="text" class="displayPlaca" id="displayCantoneira" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="inputPlaca">
+                        <h2>F530 - 3m:</h2>
+
+                        <div class="imgEInput">
+                            <img class="imgInput"
+                                alt="f530"src="https://cdn.leroymerlin.com.br/products/perfil_metalico_drywall_canaleta_f530_18mx46mmx3m_91952350_de85_600x600.jpg" />
+                            <input type="text" class="displayPlaca" id="displayF530" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="inputPlaca">
+                        <h2>Regulador e Tirante:</h2>
+
+                        <div class="imgEInput">
+                            <img class="imgInput"
+                                src="./assets/reguladorETirante.png" />
+                            <input type="text" class="displayPlaca" id="displayTranteERegulor" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="inputPlaca">
+                        <h2>Parafuso gn25mm:</h2>
+
+                        <div class="imgEInput">
+                            <img class="imgInput"
+                                src="https://artesana.fbitsstatic.net/img/p/parafuso-gn25-ponta-agulha-para-drywall-cento-ancora-66875/233697-1.jpg?w=1000&h=1000&v=no-change&qs=ignore" />
+                            <input type="text" class="displayPlaca" id="displayParafusoGn" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="inputPlaca">
+                        <h2>Parafuso flang(UN):</h2>
+
+                        <div class="imgEInput">
+                            <img class="imgInput"
+                                src="https://cdn.leroymerlin.com.br/products/parafuso_aco_para_drywall_4,2x13mm_agulha_100_pecas_88454863_0001_600x600.jpg" />
+                            <input type="text" class="displayPlaca" id="displayParafusoFlang" disabled>
+                        </div>
+                    </div>
+
+                    <div class="inputPlaca">
+                        <h2>Massa pronta (KG):</h2>
+
+
+                        <div class="imgEInput">
+                            <img class="imgInput"
+                                src="https://t74920.vteximg.com.br/arquivos/ids/169765/massa_junta_rapida_drywall_placo_25kg_91829654_9745_1800x1800.jpg?v=638381753179170000" />
+                            <input type="text" class="displayPlaca" id="displayMassa" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="inputPlaca">
+                        <h2>Fita para juntas (MT):</h2>
+
+                        <div class="imgEInput">
+                            <img class="imgInput"
+                                src="https://cdn.awsli.com.br/677/677152/produto/208116843/design-sem-nome-1-lgnwac.jpg" />
+                            <input type="text" class="displayPlaca" id="displayFita" disabled>
+                        </div>
+
+                    </div>
+
+                    <div id="contact" onclick="Print()">
+                        
+                        <a href="https://w.app/osGnVt">
+                        <img class="imgContact" src="./assets/WhatsappCarton.png" alt="zap">
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+       
+       
+       
+       
+       
+       
+        <div id="BudgetParede">
+            <div class="list">
+                <div class="close">
+                    <button class="buttonClose" onclick="closeListParede()">X</button>
                 </div>
 
                 <div class="itensList">
@@ -151,10 +266,13 @@
 
                     </div>
 
-                    <div class="contact">
-                        <img class="imgSeta" src="./assets/setaEsq.png" alt="zap">
-                        <img class="imgContact" src="./assets/botaoCarton.png" alt="zap">
-                        <img class="imgSeta" src="./assets/setaDir.png" alt="zap">
+                    <div id="contact" >
+                        
+                        <a href="https://w.app/osGnVt">
+                        <img class="imgContact" src="./assets/WhatsappCarton.png" alt="zap">
+                        </a>
+                        
+                       
                     </div>
 
 
