@@ -125,7 +125,7 @@ button:hover {
 #BudgetTeto{
     width: 490px;
     height: 800px;
-    background-color: rgb(241, 243, 150);
+    background-color: rgb(255, 255, 255);
     position:absolute;
     display:none;
     justify-content: center;
@@ -319,6 +319,20 @@ a{
     align-items: center;
     justify-content: center;
    
+    
+}
+
+#buttonZap{
+    width: 220px; /* Largura do botão */
+    height: 70px; /* Altura do botão */
+    background-color: transparent;
+    background-image: url('./assets/WhatsappCarton.png'); /* Caminho para a imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o botão */
+    background-position: center; /* Centraliza a imagem no botão */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+    outline: none; /* Remove o contorno padrão do botão */
+    margin-left: 10px;
     
 }
 

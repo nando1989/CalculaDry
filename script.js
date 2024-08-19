@@ -3,6 +3,7 @@ function appendToDisplay(value) {
     document.getElementById('display1').value += value;
  
 }
+console.log(appendToDisplay)
 
 function clearDisplay() {
     document.getElementById('display1' , 'display2').value = ' ';
@@ -126,13 +127,49 @@ function calculate() {
     document.getElementById('display1').value = result;
 }
 
-function print() {
 
-    document.getElementById("contact").addEventListener("click", function() {
-        window.print();
-    });
 
+
+
+
+function calculateAndSendMessage() {
+    var displayValue = eval(document.getElementById('display1').value);
+
+   
+    var placaStPResult = Math.ceil(displayValue / 2.16);
+    var cantoneira25Result = Math.ceil(displayValue / 2.5);
+    var f530Result = Math.ceil(displayValue / 1.8);
+    var reguladorETiranteResult = Math.ceil(displayValue * 1.3);
+    var parafusoGn25Result = Math.ceil(displayValue * 0.5);
+    var parafusoFlang13Result = Math.ceil(displayValue * .15);
+    var massaProntaResult = Math.ceil(displayValue * 0.5);
+    var fitaParaJuntaResult = Math.ceil(displayValue * 2);
+
+  
+    
+    var message = `
+    Olá, preciso deste Orçamento:\n
+    Placa ST P: ${placaStPResult}\n
+    Cantoneira: ${cantoneira25Result}\n
+    F530: ${f530Result}\n
+    Regulador e tirante: ${reguladorETiranteResult}\n
+    ParafusoGn25: ${parafusoGn25Result} centos\n
+    Parafuso metal: ${parafusoFlang13Result} centos\n
+    Massa: ${massaProntaResult} kg\n
+    Fita: ${fitaParaJuntaResult} metros\n`;
+
+   
+    sendMessage(message);
+  
 }
 
+
+function sendMessage(message) {
+    var phone = 5521994598743;; 
+    var url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+}
+
+document.getElementById("calculateAndSendMessageButton").addEventListener("click", calculateAndSendMessage);
 
 
