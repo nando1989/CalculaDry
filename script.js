@@ -3,10 +3,11 @@ function appendToDisplay(value) {
     document.getElementById('display1').value += value;
  
 }
-console.log(appendToDisplay)
 
 function clearDisplay() {
-    document.getElementById('display1' , 'display2').value = ' ';
+    document.getElementById('display1').value = ' ';
+    document.getElementById('display2').value = ' ';
+    
 }
 
 function placaStP(value) {
